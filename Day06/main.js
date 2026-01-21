@@ -4,6 +4,9 @@ const assert = require("assert");
 const { performance } = require("perf_hooks");
 const { Queue } = require("../Utils/Queue.js");
 
+const title = "## Day 6: Chronal Coordinates ##"
+const url = "https://adventofcode.com/2018/day/6"
+
 const directions = [{dx:0,dy:1},{dx:1,dy:0},{dx:0,dy:-1},{dx:-1,dy:0}];
 
 function partOne(points){
@@ -129,15 +132,17 @@ function solveFile(filePath){
   let start = performance.now();
   const result1 = partOne(points);
   const mid = performance.now();
-  console.log(`Result partOne: ${result1} in ${(mid - start).toPrecision(6)}ms`)
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`)
 
   start = performance.now();
   const result2 = partTwo(points);
   const end = performance.now();
 
-  console.log(`Result partTwo: ${result2} in ${(end - start).toPrecision(6)}ms`)
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`)
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)){
   solveFile(filePath);
 }

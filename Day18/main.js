@@ -153,18 +153,14 @@ function solveFile(filePath) {
   let start = performance.now();
   const result1 = partOne();
   const mid = performance.now();
-  console.log(
-    `Result partOne: ${result1} in ${(mid - start).toPrecision(6)}ms`,
-  );
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`);
 
   grid = orig.slice();
   start = performance.now();
   const result2 = partTwo();
   const end = performance.now();
 
-  console.log(
-    `Result partTwo: ${result2} in ${(end - start).toPrecision(6)}ms`,
-  );
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
 for (let filePath of process.argv.slice(2)) {

@@ -14,8 +14,8 @@ File: sample.txt
 # . . . # . . # # #
 ```
 
-Result partOne: 0 in 1.90365ms\
-Result partTwo: 3 in 0.200712ms
+Part 1 result: 0 in 1.90365ms\
+Part 2 result: 3 in 0.200712ms
 
 File: input.txt
 ```
@@ -31,5 +31,5 @@ File: input.txt
 . # # # . # . . . # # # . # . . # # # # # # . . # # # # # # . . # # # # # # . . # . . . . # . . . # # # # . . . # # # # # #
 ```
 
-Result partOne: 0 in 27.7454ms\
-Result partTwo: 10144 in 21.8082ms
+Part 1 result: 0 in 27.7454ms\
+Part 2 result: 10144 in 21.8082ms

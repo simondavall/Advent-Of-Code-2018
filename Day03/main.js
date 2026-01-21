@@ -3,6 +3,8 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 3: No Matter How You Slice It ##"
+const url = "https://adventofcode.com/2018/day/3"
 
 const fabric = [];
 let claims_g = [];
@@ -88,12 +90,12 @@ function partTwo(){
 
 function solveFile(filePath){
   var lines = fs.readFileSync(filePath).toString().trim().split('\n');
-  console.log(`\nFinding solution for ${filePath}`)
+  console.log(`\nFile: ${filePath}`)
   
   let start = performance.now();
   const result1 = partOne(lines);
   const mid = performance.now();
-  console.log(`Result partOne: ${result1} in ${(mid - start).toPrecision(6)}ms`)
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`)
 
 
   start = performance.now();
@@ -101,9 +103,11 @@ function solveFile(filePath){
   const end = performance.now();
   const arr = Array.from(result2).sort();
 
-  console.log(`Result partTwo: ${result2} in ${(end - start).toPrecision(6)}ms`)
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`)
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)){
   solveFile(filePath);
 }

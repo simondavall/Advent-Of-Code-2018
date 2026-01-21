@@ -2,6 +2,9 @@ const fs = require("fs");
 const { performance } = require("perf_hooks");
 const { Stack } = require("../Utils/Stack.js");
 
+const title = "## Day 5: Alchemical Reduction ##"
+const url = "https://adventofcode.com/2018/day/5"
+
 let partOneResult = 0;
 
 function partOne(data){
@@ -67,15 +70,17 @@ function solveFile(filePath){
   let start = performance.now();
   const result1 = partOne(input);
   const mid = performance.now();
-  console.log(`Result partOne: ${result1} in ${(mid - start).toPrecision(6)}ms`)
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`)
 
   start = performance.now();
   const result2 = partTwo(input);
   const end = performance.now();
 
-  console.log(`Result partTwo: ${result2} in ${(end - start).toPrecision(6)}ms`)
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`)
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)){
   solveFile(filePath);
 }

@@ -1,11 +1,10 @@
-### --- Day 4: Repose Record --- ###
+## Day 4: Repose Record ##
 https://adventofcode.com/2018/day/4
 
+File: sample.txt\
+Part 1 result: 240 in 0.820736ms\
+Part 2 result: 4455 in 0.0885110ms
 
-Finding solution for sample.txt
-Result partOne: 240 in 1.02131ms
-Result partTwo: 4455 in 0.0862880ms
-
-Finding solution for input.txt
-Result partOne: 76357 in 8.76281ms
-Result partTwo: 41668 in 0.372264ms
+File: input.txt\
+Part 1 result: 76357 in 8.34423ms\
+Part 2 result: 41668 in 0.161575ms

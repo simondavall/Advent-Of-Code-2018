@@ -1,8 +1,6 @@
-### --- Day 6: Chronal Coordinates --- ###
+## Day 6: Chronal Coordinates ##
 https://adventofcode.com/2018/day/6
 
-
-File: input.txt
-Result partOne: 3933 in 28.4274ms
-Distance in range
-Result partTwo: 41145 in 77.0807ms
+File: input.txt\
+Part 1 result: 3933 in 28.4991ms\
+Part 2 result: 41145 in 74.5933ms

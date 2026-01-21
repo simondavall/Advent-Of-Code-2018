@@ -1,11 +1,10 @@
-### --- Day 5: Alchemical Reduction --- ###
+## Day 5: Alchemical Reduction ##
 https://adventofcode.com/2018/day/5
 
+File: sample.txt\
+Part 1 result: 10 in 0.188235ms\
+Part 2 result: 4 in 0.461107ms
 
-File: sample.txt
-Result partOne: 10 in 0.257203ms
-Result partTwo: 4 in 0.468298ms
-
-File: input.txt
-Result partOne: 9348 in 8.24306ms
-Result partTwo: 4996 in 51.6585ms
+File: input.txt\
+Part 1 result: 9348 in 7.59860ms\
+Part 2 result: 4996 in 51.7012ms

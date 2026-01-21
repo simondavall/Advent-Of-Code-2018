@@ -8,5 +8,5 @@ For 9 recipes, scores: 5158916779
 For 18 recipes, scores: 9251071085
 For 2018 recipes, scores: 5941429882
 For 702831 recipes, scores: 1132413111
-Result partOne: 1132413111 in 148.597ms
-Result partTwo: 20340232 in 3948.06ms
+Part 1 result: 1132413111 in 148.597ms
+Part 2 result: 20340232 in 3948.06ms
