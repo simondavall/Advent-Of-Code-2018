@@ -1,11 +1,10 @@
-### --- Day 1: Chronal Calibration --- ###
+## Day 1: Chronal Calibration ##
 https://adventofcode.com/2018/day/1
 
+File: sample.txt\
+Part 1 result: 3 in 0.0243510ms\
+Part 2 result: 2 in 0.0446580ms
 
-Finding solution for sample.txt
-Result partOne: 3 in 0.0245450ms
-Result partTwo: 2 in 0.0419000ms
-
-Finding solution for input.txt
-Result partOne: 540 in 0.0664590ms
-Result partTwo: 73056 in 15.2587ms
+File: input.txt\
+Part 1 result: 540 in 0.0614180ms\
+Part 2 result: 73056 in 14.2288ms
