@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 18: Settlers of The North Pole ##"
+const url = "https://adventofcode.com/2018/day/18"
+
 const neighbours = [
   { dx: 0, dy: -1 },
   { dx: 1, dy: -1 },
@@ -39,7 +42,7 @@ function partOne() {
     lumberyards += row.filter((x) => x == "#").length;
   }
 
-  console.log(`trees:${trees}, lumber:${lumberyards}`);
+  //console.log(`trees:${trees}, lumber:${lumberyards}`);
   return trees * lumberyards;
 }
 
@@ -63,12 +66,12 @@ function partTwo() {
     }
     if (visited.has(signature)){
       if (!found_repeat){
-        console.log(`Found initial repeat signature: after:${visited.size} rounds`);
+        //console.log(`Found initial repeat signature: after:${visited.size} rounds`);
         initial_repeat == visited.size;
         found_repeat = true;
       }
       else{
-        console.log(`Found next repeat signature: after:${visited.size} rounds`);
+        //console.log(`Found next repeat signature: after:${visited.size} rounds`);
         repeat_frequency = visited.size;
         // reduce minutes by chunks of repeated requency
         minutes = Math.round(minutes % repeat_frequency);
@@ -88,7 +91,7 @@ function partTwo() {
     lumberyards += row.filter((x) => x == "#").length;
   }
 
-  console.log(`trees:${trees}, lumber:${lumberyards}`);
+  //console.log(`trees:${trees}, lumber:${lumberyards}`);
   return trees * lumberyards;
   let tally = 0;
 
@@ -163,6 +166,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

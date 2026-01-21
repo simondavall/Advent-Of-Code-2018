@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 14: Chocolate Charts ##"
+const url = "https://adventofcode.com/2018/day/14"
+
 let elf1 = 0;
 let elf2 = 1;
 const recipes = [3, 7];
@@ -25,7 +28,7 @@ function partOne() {
   for (const max of input) {
     var arr = recipes.slice(max, max + 10);
     scores = arr.join("");
-    console.log(`For ${max} recipes, scores: ${scores}`);
+    //console.log(`For ${max} recipes, scores: ${scores}`);
   }
 
   return scores;
@@ -119,6 +122,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

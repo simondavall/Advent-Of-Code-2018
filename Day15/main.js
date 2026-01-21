@@ -4,6 +4,9 @@ const assert = require("assert");
 const { performance } = require("perf_hooks");
 const { Queue } = require("../Utils/Queue.js");
 
+const title = "## Day 15: Beverage Bandits ##"
+const url = "https://adventofcode.com/2018/day/15"
+
 class Unit {
   constructor(id, r, c, type) {
     this.id = id;
@@ -286,6 +289,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

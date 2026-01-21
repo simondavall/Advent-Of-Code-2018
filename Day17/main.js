@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 17: Reservoir Research ##"
+const url = "https://adventofcode.com/2018/day/17"
+
 let grid = [];
 let minX = 999;
 let maxX = 0;
@@ -179,6 +182,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

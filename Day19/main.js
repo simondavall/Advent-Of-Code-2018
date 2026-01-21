@@ -4,6 +4,9 @@ const assert = require("assert");
 const { performance } = require("perf_hooks");
 const { Device, Instruction } = require("../Device/opcodes.js");
 
+const title = "## Day 19: Go With The Flow ##"
+const url = "https://adventofcode.com/2018/day/19"
+
 function partOne(input) {
   const register = [0, 0, 0, 0, 0, 0];
   const data = input[0].split(" ");
@@ -68,6 +71,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }
