@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 24: Immune System Simulator 20XX ##"
+const url = "https://adventofcode.com/2018/day/24"
+
 let nextId = 0;
 
 class Army {
@@ -107,7 +110,7 @@ function partTwo(immuneData, infectionData) {
     boost += 1; // increase boost and re-run the attack
   }
 
-  console.log(`Final boost: ${boost}\\`);
+  //console.log(`Final boost: ${boost}\\`);
   return armies.reduce((acc, cur) => acc + cur.units, 0);
 }
 
@@ -197,7 +200,7 @@ function getAttributes(str) {
 function solveFile(filePath) {
   nextId = 0;
   var input = fs.readFileSync(filePath).toString().trim().split("\n\n");
-  console.log(`\\\nFile: ${filePath}\\`);
+  console.log(`\nFile: ${filePath}`);
   assert(input.length == 2, `Expected 2 inputs, got ${input.length}`);
 
   const immuneData = input[0].split("\n").slice(1);
@@ -206,14 +209,16 @@ function solveFile(filePath) {
   let start = performance.now();
   const result1 = partOne(immuneData, infectionData);
   const mid = performance.now();
-  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms\\`);
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`);
 
   start = performance.now();
   const result2 = partTwo(immuneData, infectionData);
   const end = performance.now();
-  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms\\`);
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

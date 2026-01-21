@@ -4,6 +4,9 @@ const assert = require("assert");
 const { performance } = require("perf_hooks");
 const { Stack } = require("../Utils/Stack.js");
 
+const title = "## Day 20: A Regular Map ##"
+const url = "https://adventofcode.com/2018/day/20"
+
 const directions = {
   N: { dx: 0, dy: -1, char: "-" },
   E: { dx: 1, dy: 0, char: "|" },
@@ -85,6 +88,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

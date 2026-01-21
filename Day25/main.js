@@ -3,6 +3,8 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 25: Four-Dimensional Adventure ##"
+const url = "https://adventofcode.com/2018/day/25"
 
 class Point4D{
   constructor(id,a,b,c,d){
@@ -65,20 +67,22 @@ function partTwo(input){
 
 function solveFile(filePath){
   var input = fs.readFileSync(filePath).toString().trim().split('\n');
-  console.log(`\\\nFile: ${filePath}\\`)
+  console.log(`\nFile: ${filePath}`)
   
   let start = performance.now();
   const result1 = partOne(input);
   const mid = performance.now();
-  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms\\`)
+  console.log(`Part 1 result: ${result1} in ${(mid - start).toPrecision(6)}ms`)
 
   start = performance.now();
   const result2 = partTwo(input);
   const end = performance.now();
 
-  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms\\`)
+  console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`)
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)){
   solveFile(filePath);
 }
