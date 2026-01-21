@@ -3,6 +3,8 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 9: Marble Mania ##"
+const url = "https://adventofcode.com/2018/day/9"
 
 class GameNode {
   constructor(value) {
@@ -172,6 +174,8 @@ function solveFile(filePath){
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`)
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)){
   solveFile(filePath);
 }

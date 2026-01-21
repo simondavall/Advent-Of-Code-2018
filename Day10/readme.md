@@ -1,6 +1,5 @@
-### --- Day 10: The Stars Align --- ###
+## Day 10: The Stars Align ##
 https://adventofcode.com/2018/day/10
-
 
 File: sample.txt
 ```
@@ -13,9 +12,8 @@ File: sample.txt
 # . . . # . . . # .
 # . . . # . . # # #
 ```
-
-Part 1 result: 0 in 1.90365ms\
-Part 2 result: 3 in 0.200712ms
+Part 1 result: 0 in 1.75882ms\
+Part 2 result: 3 in 0.185447ms
 
 File: input.txt
 ```
@@ -30,6 +28,5 @@ File: input.txt
 # . . . # # . . # . . . # # . . # . . . . . . . # . . . . . . . # . . . . . . . # . . . . # . . # . . . . # . . # . . . . .
 . # # # . # . . . # # # . # . . # # # # # # . . # # # # # # . . # # # # # # . . # . . . . # . . . # # # # . . . # # # # # #
 ```
-
-Part 1 result: 0 in 27.7454ms\
-Part 2 result: 10144 in 21.8082ms
+Part 1 result: 0 in 27.8104ms\
+Part 2 result: 10144 in 21.7086ms

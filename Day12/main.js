@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 12: Subterranean Sustainability ##"
+const url = "https://adventofcode.com/2018/day/12"
+
 class PotNode {
   constructor(value, index) {
     this.value = value;
@@ -197,7 +200,7 @@ function partOne(input) {
 }
 
 function partTwo(input) {
-  let generations = 120;
+  let generations = 89;
   const initialState = input[0].split(": ")[1].trim();
   const combos = getCombos(input[1]);
 
@@ -206,7 +209,7 @@ function partTwo(input) {
 
   //console.log(`00: ${head.toString()}`);
 
-  for (let gen = 1; gen <= generations; gen++) {
+  for (let gen = 1; gen <= 120; gen++) {
     let current = getStartNode(head);
     while (current.canGetPattern()) {
       const ch = combos[current.getPattern()];
@@ -219,12 +222,15 @@ function partTwo(input) {
     }
     head.update();
     head.normalize();
+
+    if (gen == generations)
+      totalAt89 = head.getCount()
     // console.log(
     //   `${gen < 100 ? '0' + gen : gen}: Count:${head.getCount()} ${head.toString()}`,
     // );
   }
 
-  return head.getCount() + (50000000000 - 89) * 50;
+  return totalAt89 + (50000000000 - generations) * 50;
 }
 
 function solveFile(filePath) {
@@ -243,6 +249,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }

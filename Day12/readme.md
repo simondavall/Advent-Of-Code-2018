@@ -1,4 +1,4 @@
-### --- Day 12: Subterranean Sustainability --- ###
+## Day 12: Subterranean Sustainability ##
 https://adventofcode.com/2018/day/12
 
 Part 2 for this puzzle required me to observe the results to esatblish a pattern.
@@ -13,12 +13,12 @@ For 50,000,000,000 that is:
         5145 + (49,999,999,911 * 50) = 2,500,000,000,695
 
 
-File: sample.txt
-Part 1 result: 325 in 5.52176ms
+File: sample.txt\
+Part 1 result: 325 in 5.52176ms\
 Part 2 result: 2499999996704 in 20.6165ms
 
-File: input.txt
-Part 1 result: 2911 in 10.4114ms
+File: input.txt\
+Part 1 result: 2911 in 10.4114ms\
 Part 2 result: 2500000000695 in 74.5320ms
 
 00: .....(#)#.#...#.#.#....###.#.#....##.#...##.##.###..#.##.###..####.#..##..#.##..#.......####.#.#..#....##.#.....

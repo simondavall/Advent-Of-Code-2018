@@ -3,6 +3,9 @@ const os = require("os");
 const assert = require("assert");
 const { performance } = require("perf_hooks");
 
+const title = "## Day 10: The Stars Align ##"
+const url = "https://adventofcode.com/2018/day/10"
+
 class Star {
   constructor(x, y, dx, dy) {
     this.x = x;
@@ -102,8 +105,9 @@ function printGrid(stars) {
     grid[star.y - size.minY][star.x - size.minX] = "#";
   }
 
+  console.log("```")
   grid.forEach((row) => console.log(...row));
-  console.log();
+  console.log("```");
 }
 
 function advanceStars(stars) {
@@ -156,6 +160,8 @@ function solveFile(filePath) {
   console.log(`Part 2 result: ${result2} in ${(end - start).toPrecision(6)}ms`);
 }
 
+console.log(title)
+console.log(url)
 for (let filePath of process.argv.slice(2)) {
   solveFile(filePath);
 }
