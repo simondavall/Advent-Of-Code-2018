@@ -9,4 +9,4 @@ Advent Of Code 2018 solutions written using javascript
 This will execute both puzzles for the day and display results in the console.
 
 
-<img src="./rudolph.png" alt="Rudolph's retreat" width="600" />
+<img src="./aoc2018.png" alt="Rudolph's retreat" width="600" />
