@@ -1,15 +1,34 @@
 # Advent Of Code 2018 - All days complete and fully working examples
 Advent Of Code 2018 solutions written using javascript
 
-### Quick Start ###
-1. Install node.js (I used version 22.18.0)
-2. Navigate to one of the days in terminal
-3. Execute `make`
-
-This will execute both puzzles for the day and display results in the console.
-
-
 <img src="./aoc2018.png" alt="Rudolph's retreat" width="600" />
+
+### To run all 25 days: ###
+1. Install node.js if it is not already installed. (I used 22.18.0). https://nodejs.org/en/download
+2. Navigate to the project root.
+3. Execute the make file: 
+```bash
+make
+```
+or directly from the root using 
+```bash
+cd runner && node program.js
+```
+This will execut all days' projects.\
+The results will be displayed in the terminal window, with execution timings for each.
+
+### To run an individual day: ###
+1. Install node.js if it is not already installed. (I used 22.18.0). https://nodejs.org/en/download
+2. Navigate to the day (e.g. /Day01)
+3. Execute the make file to run the days' solution: 
+```bash
+make
+```
+or directly from within the day root using 
+```bash
+node main.js input.txt
+```
+Change 'input.txt' to 'sample.txt' to run with the sample instead
 
 # All results with execution timings #
 
